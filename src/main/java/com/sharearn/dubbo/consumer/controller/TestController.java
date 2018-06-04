@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TestController {
 
     @Autowired
-    TestServiceForComsum testServiceForComsum;
+    TestService testService;
 
     @ResponseBody
     @RequestMapping("/test/{name}")
     public JSONObject testJson(@PathVariable("name") String name) {
         JSONObject jsonObject = new JSONObject();
-        String testStr = testServiceForComsum.sayHello(name);
+        String testStr = testService.sayHello(name);
         jsonObject.put("str",testStr);
         return jsonObject;
 

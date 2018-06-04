@@ -8,7 +8,7 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="dubbo-consumer" owner="dubbo-consumer"/>
-    <dubbo:registry protocol="zookeeper" address="192.168.10.41:4183" client="zkclient"/>
-    <dubbo:reference id="testService" interface="com.sharearn.dubbo.romote.TestService"/>
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" client="zkclient"/>
+    <dubbo:reference id="testService"  check="false" interface="com.sharearn.dubbo.romote.TestService"/>
 
 </beans>

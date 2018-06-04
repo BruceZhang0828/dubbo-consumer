@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
  * Created by deepbay on 2018/5/30.
  */
 
-@Component
+//@Component
 public class TestServiceForComsum {
 
-    @Reference(version = "1.0.0")
+    //@Reference(version = "1.0.0")
     private TestService testService;
 
     /**
